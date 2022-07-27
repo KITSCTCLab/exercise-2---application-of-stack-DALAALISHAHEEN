@@ -6,6 +6,9 @@ class Evaluate:
       stack: A List which acts as a Stack.
   """
     # Write your code here
+    stop = -1
+    size_of_stack = size
+    stack = []
 
 
   def __init__(self, size):
@@ -25,6 +28,9 @@ class Evaluate:
       True if it is empty, else returns False.
     """
       # Write your code here
+      if len(self.stack)==0 :
+            return True
+
 
 
   def pop(self):
@@ -34,6 +40,8 @@ class Evaluate:
       The data which is popped out if the stack is not empty.
     """
     # Write your code here
+    if not self.isEmpty():
+            self.item.pop()
 
 
   def push(self, operand):
@@ -43,6 +51,8 @@ class Evaluate:
       operand: The operand to be pushed.
     """
     # Write your code here
+    if  self.isEmpty():
+            self.item.pop()
 
 
   def validate_postfix_expression(self, expression):
