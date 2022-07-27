@@ -41,7 +41,7 @@ class Evaluate:
     """
     # Write your code here
     if not self.isEmpty():
-            self.item.pop()
+            self.stack.pop()
 
 
   def push(self, operand):
@@ -52,7 +52,7 @@ class Evaluate:
     """
     # Write your code here
     if  self.isEmpty():
-            self.item.pop()
+            self.stack.pop()
 
 
   def validate_postfix_expression(self, expression):
@@ -64,6 +64,8 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
+    
+    
 
 
   def evaluate_postfix_expression(self, expression):
