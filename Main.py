@@ -63,14 +63,14 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
-    x = 0
-    y = 0
+    a = 0
+    b = 0
     for element in expression:
       if element.isnumeric():
-        x = x + 1
+        a = a + 1
       else:
-        y = y + 1
-    if y == x - 1:
+        b = b + 1
+    if b == a - 1:
       return True
     else:
       return False
