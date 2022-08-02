@@ -67,7 +67,7 @@ class Evaluate:
     y = 0
     for element in expression:
       if element.isnumeric():
-        x = y + 1
+        x = x + 1
       else:
         y = y + 1
     if y == x - 1:
