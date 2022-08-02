@@ -7,7 +7,7 @@ class Evaluate:
   """
     # Write your code here
 
-  def _init_(self, size):
+  def __init__(self, size):
     """Inits Evaluate with top, size_of_stack and stack.
     Arguments:
       top:An integer which points to the top most element in the stack.
@@ -63,14 +63,14 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
-    a = 0
-    b = 0
+    x = 0
+    y = 0
     for element in expression:
       if element.isnumeric():
-        a = a + 1
+        x = y + 1
       else:
-        b = b + 1
-    if b == a - 1:
+        y = y + 1
+    if y == x - 1:
       return True
     else:
       return False
